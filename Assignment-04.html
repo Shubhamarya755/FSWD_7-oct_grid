@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmnet-04</title>
+    <style>
+        #a{grid-area:a;}
+        #b{grid-area:b;}
+        #c{grid-area:c;}
+        #d{grid-area:d;}
+        #e{grid-area:e;}
+        #f{grid-area:f;}
+        #g{grid-area:g;}
+        #h{grid-area:h;}
+        .container{border: 1px solid rgb(5, 0, 0);
+            background-color: rgb(216, 184, 184);
+            height: 50vh;
+            width: 96vw;
+            margin: 20px;
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(6 ,1fr);
+            grid-template-rows:1fr 1fr ;
+            grid-template-areas: 
+            "c d e f g h"
+            "a b . . . .";
+
+        }
+        .main{
+            border: 2px solid rgb(255, 250, 250);
+            margin: 10px;
+            padding: 10px;
+        
+        }
+        .main:nth-child(odd){
+            background-color: rgb(92, 89, 89);
+            color: beige;
+
+        }
+        .main:nth-child(even){
+            background-color: rgb(124, 187, 232);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main" id="a">1</div>
+        <div class="main" id="b">2</div>
+        <div class="main" id="c">3</div>
+        <div class="main" id="d">4</div>
+        <div class="main" id="e">5</div>
+        <div class="main" id="f">6</div>
+        <div class="main" if="g">7</div>
+        <div class="main" id="h">8</div>
+    </div>
+</body>
+</html>

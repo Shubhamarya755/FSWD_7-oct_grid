@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-02</title>
+    <style>
+        #a{grid-area:a;}
+        #b{grid-area:b;}
+        #c{grid-area:c;}
+        #d{grid-area:d;}
+        .container{
+            border: 2px solid black;
+            width: 97vw;
+            height: 50vh;
+            margin: 10px;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(2,1fr);
+            grid-template-areas:
+            "a a b"
+            "c d b";
+        }
+        .main{
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            background-color: bisque;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main" id="a">A</div>
+        <div class="main" id="b">B</div>
+        <div class="main" id="c">C</div>
+        <div class="main" id="d">D</div>
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmnet-05</title>
+    <style>
+         .container {
+            border: 1px solid black;
+            height: 50vh;
+            margin: 5px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows:repeat(3, 1fr);
+        
+
+        }
+        /* Id for justify-items  of container box*/
+        #box-1{
+            justify-items: center;
+
+        }
+        /* ID for justify-self  under the elements of coantainer box  */
+        #e{
+            justify-self: baseline;
+        }
+        #f{
+            justify-self:end
+        }
+        #g{
+            justify-self: center;
+        }
+        #j{justify-self:baseline ;}
+
+        /*  classes of all elements of under the  coantainer box  */
+
+        .main {
+            border: 3px solid black;
+            width: 20vw;
+            color: white;
+            background-color: red;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h5> Box-01 [3x2]</h5>
+    <div class="container" id="box-1">
+        <div class="main" id="a">A <p>justify-items:center</p></div>
+        <div class="main" id="b">B <P>justify-items:center</P></div>
+        <div class="main" id="c">C <p>justify-items:center</p></div>
+        <div class="main" id="d">D <p>justify-items:center</p></div>
+    </div>
+    <h5>Box-02 [3x2]</h5>
+    <div class="container" id="box-2">
+        <div class="main" id="e">E <p>justify-self:baseline</p></div>
+        <div class="main" id="f">F <p>justify-self:end</p></div>
+        <div class="main" id="g">G <p>justify-self:center</p></div>
+        <div class="main" id="h">H <p>justify not apply</p></div>
+        <div class="main" id="i">I <p>justify-not apply</p></div>
+        <div class="main" id="j">J <p>justify-self-baseline</p></div>
+    </div>
+    
+</body>
+</html>
