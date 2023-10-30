@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmnet-01</title>
+    <style>
+        #one {
+            grid-area: one;
+            background-size: cover;
+            background-image: url("https://t4.ftcdn.net/jpg/04/04/73/39/240_F_404733910_2mIXr6RbC5G3WZJFjopVsBaR3EOM6Bqy.jpg");
+            background-image: -;
+        }
+
+        #two {
+            grid-area: two;
+            background-size:contain;
+            background-image:url("https://4kwallpapers.com/images/walls/thumbs/12718.jpg")        }
+
+        #three {
+            grid-area: three;
+            background-size:cover;
+            background-image: url("https://assets-prd.ignimgs.com/2022/09/30/best-magical-girl-anime-1664575384163.jpg");
+
+        }
+
+        #four {
+            grid-area: four;
+            background-size: contain;
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/07740ba3-9a89-4cbc-826e-5ed2fc921f3f/de69v8y-516385ec-45a4-4190-b39e-cbba024ca12d.png/v1/fill/w_630,h_350,q_70,strp/magical_girls_by_albertosancami_de69v8y-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA3NzQwYmEzLTlhODktNGNiYy04MjZlLTVlZDJmYzkyMWYzZlwvZGU2OXY4eS01MTYzODVlYy00NWE0LTQxOTAtYjM5ZS1jYmJhMDI0Y2ExMmQucG5nIiwiaGVpZ2h0IjoiPD04ODkiLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8wNzc0MGJhMy05YTg5LTRjYmMtODI2ZS01ZWQyZmM5MjFmM2ZcL2FsYmVydG9zYW5jYW1pLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.lc3qLMllmnFB8TNs_e-2pMF6e5y9n9xqb_U-eeIZHmE");
+        }
+
+        #five {
+            grid-area: five;
+            background-size: cover;
+            background-image: url("https://litfl.com/wp-content/uploads/2019/01/EBM-Gone-Wild-sea-700-400.jpeg");
+        }
+
+        #six {
+            grid-area: six;
+            background-size: cover;
+            background-image: url("https://litfl.com/wp-content/uploads/2019/01/EBM-Gone-Wild-sea-700-400.jpeg");
+        }
+
+        .container {
+            margin: 10px;
+            height: 50vh;
+            width: 97vw;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "one one two"
+                "three four five"
+                "three six five";
+        }
+
+        .main {
+            border: 1px solid black;
+            margin: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main" id="one">1</div>
+        <div class="main" id="two">Two</div>
+        <div class="main" id="three">Three</div>
+        <div class="main" id="four"> Four</div>
+        <div class="main" id="five">Five</div>
+        <div class="main" id="six">Six</div>
+
+    </div>
+
+</body>
+
+</html>
